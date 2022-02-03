@@ -1,6 +1,7 @@
 import { FiArrowLeft, FiLink, FiTrash } from 'react-icons/fi'
 import './links.css'
 import { Link } from 'react-router-dom'
+import Modal from '../../components/Modal/Modal'
  
 
 export default function Links() {
@@ -34,10 +35,7 @@ export default function Links() {
           <FiTrash size={24} color='#FF5454'/>
         </button>
       </div>
-
-    
       
-
     </div>
   )
 }
