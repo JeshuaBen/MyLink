@@ -1,0 +1,28 @@
+:root {
+  --background-color: #132742;
+  --text-field-color: #FFFFFF;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: var(--background-color);
+}
+
+button {
+  cursor: pointer;
+}
+
+.app {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

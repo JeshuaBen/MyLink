@@ -1,0 +1,115 @@
+.container-home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+  color: var(--text-field-color);
+  margin-bottom: 14px;
+}
+
+.logo span {
+  color: #adadad;
+  font-size: 18px;
+  margin-bottom: 34px;
+}
+
+.input-area {
+  width: 540px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  animation: slideY 2s;
+}
+
+/* Animação subindo input-area */
+@keyframes slideY {
+  from {
+    transform: translateY(90px);
+  }
+
+  to {
+    transform: translateY(0px);
+    /* Onde 0 px é a posição atual */
+  }
+
+}
+
+.input-area div {
+  width: 100%;
+  height: 46px;
+  background-color: rgb(255,255,255, 0.15);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.input-area img {
+  margin: 0 8px;
+}
+
+.input-area input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  height: 46px;
+  color: var(--text-field-color);
+  outline: none;
+  font-size: 18px;
+}
+
+.input-area input::placeholder {
+  color: rgb(255,255,255, 0.8);
+}
+
+.input-area button {
+  width: 100%;
+  height: 46px;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  background: #ffffff;
+
+  transition: transform 0.4s;
+}
+
+.input-area button:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 615px) {
+
+  .logo img {
+    width: 95px;
+  }
+
+  .logo h1 {
+    font-size: 40px;
+  }
+
+  .logo span {
+    font-size: 14px;
+  }
+
+  .input-area {
+    width: 85%;
+  }
+
+}
