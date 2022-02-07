@@ -31,6 +31,13 @@
 .modal-header button {
   border: 0;
   background: transparent;
+
+  transition: hover 0.2s;
+}
+
+.modal-header button:hover {
+  background-color: rgb(214, 212, 212);
+  border-radius: 4px;
 }
 
 .modal-container span {

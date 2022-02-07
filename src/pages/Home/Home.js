@@ -6,6 +6,8 @@ import { useState } from 'react'
 import Modal from '../../components/Modal/Modal'
 import api from '../../services/api'
 
+import { saveLink } from '../../services/storedLinks'
+
  
 export default function Home () {
   const [link, setLink] = useState('');
@@ -20,6 +22,8 @@ export default function Home () {
 
       setData(response.data)
       setShowModal(true)
+
+      saveLink('@encurtaLink', response.data)
 
       setLink('')
 
